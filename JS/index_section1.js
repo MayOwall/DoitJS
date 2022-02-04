@@ -7,9 +7,9 @@ function calculator(event) {
   const answer = document.querySelector("#number-asker .answer");
 
   if(num.value % 3 === 0) {
-    answer.innerText = `👉 ${num.value}은 3의 배수가 맞습니다. 👈`;
+    answer.innerText = `👉 '${num.value}'은 3의 배수가 맞습니다. 👈`;
   } else {
-    answer.innerText = `👉 ${num.value}은 3의 배수가 아닙니다. 👈`;
+    answer.innerText = `👉 '${num.value}'은 3의 배수가 아닙니다. 👈`;
   };
   
   num.value = "";
