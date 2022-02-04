@@ -9,7 +9,8 @@
 </head>
 <body>
   <div id="number-asker" class="section">
-    <div class="title">3의 배수 비교기</div>
+    <div class="function">{변수 선언하기}</div>
+    <div class="title">[ 3의 배수 비교기 ]</div>
     <div class="question">숫자를 입력하세요</div>
     <form>
       <input type="text" required placeholder="숫자만 입력하세요 ex) 3">
@@ -19,17 +20,30 @@
   </div>
 
   <div id="OR" class="section">
-    <div class="title">OR 연산기</div>
+    <div class="function">{OR/AND 연산기}</div>
+    <div class="title">[ 두 숫자는 50미만일까? ]</div>
     <div class="question">50 미만의 숫자를 입력하세요</div>
     <form>
-      <input type="text" required placeholder="첫번째 숫자를 입력하세요"><br>
-      <input type="text" required placeholder="두번째 숫자를 입력하세요"><br>
+      <input type="text" required placeholder="첫번째 숫자를 입력하세요">
+      <input type="text" required placeholder="두번째 숫자를 입력하세요">
       <input type="submit" value="ok!">
     </form>
     <div class="hidden answer"></div>
   </div>
+
+  <div id="switch" class="section">
+    <div class="function">{switch문 활용}</div>
+    <div class="title">[ 스타팅 포켓몬 고르기 ]</div>
+    <div class="question">당신의 <b>스타팅 포켓몬</b> 을 고르세요.<br>( '꼬부기, 파이리, 이상해씨' 중 하나 )</div>
+    <form>
+      <input type="text" required placeholder="포켓몬 이름만 입력하세요">
+      <input type="submit" value="ok!">
+    </form>
+    <div class="answer"></div>
+  </div>
   <script src="JS/index_section1.js"></script>
   <script src="JS/OR.js"></script>
+  <script src="JS/switch.js"></script>
 </body>
 </html>
 
