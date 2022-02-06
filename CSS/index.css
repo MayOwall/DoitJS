@@ -51,9 +51,22 @@ input[type="submit"] {
   color: gray;
 }
 .answer {
-  margin-top: 1rem;
+  margin: 1rem auto;
   color: black;
   font-weight: 700;
+}
+#practice1 .answer {
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+.column-box {
+  padding: 0.3rem;
+}
+.column-box span {
+  padding: 0.1rem 0.2rem;
+  border: 1px solid lightslategray;
+  line-height: 1.4rem;
 }
 #formula-block {
 display: inline-block;

@@ -3,7 +3,6 @@ const doubleForUserAnswer = doubleFor.querySelector("input:first-child");
 const answer = document.querySelector("#중첩for문 .answer");
 
 function calculator() {
-
   let i,j;
   for (i = 1; i <= Number(doubleForUserAnswer.value); i++) {
     const formulaBlock = document.createElement("div");

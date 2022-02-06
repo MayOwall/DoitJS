@@ -7,8 +7,6 @@ function section7Calculator(event) {
   const value = section7Form.querySelector("input:first-child");
   const answer = section7.querySelector(".answer");
 
-  console.log(Number(value.value));
-
   if(isNaN(Number(value.value))) {
     answer.innerText = "숫자만 입력 해 주셔유~";
   } else {
