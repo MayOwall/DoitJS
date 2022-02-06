@@ -3,9 +3,9 @@ const doubleForUserAnswer = doubleFor.querySelector("input:first-child");
 const answer = document.querySelector("#중첩for문 .answer");
 
 function calculator() {
-  let i,j;
 
-  for (i = 1; i <= parseInt(doubleForUserAnswer.value); i++) {
+  let i,j;
+  for (i = 1; i <= Number(doubleForUserAnswer.value); i++) {
     const formulaBlock = document.createElement("div");
     formulaBlock.setAttribute("id", "formula-block");
     const title = document.createElement("div");
@@ -23,8 +23,12 @@ function calculator() {
 function formulaWritter(event) {
   event.preventDefault();
 
-  answer.innerHTML = "";
-  calculator();
+  if(isNaN(Number(doubleForUserAnswer.value))) {
+    answer.innerText = "숫자만 입력해 주셔유~";
+  } else {
+    answer.innerHTML = "";
+    calculator();
+  };
 };
 
 
