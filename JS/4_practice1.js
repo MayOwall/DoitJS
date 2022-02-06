@@ -6,7 +6,15 @@ function calculator(event) {
 
   const visitorNum = practice1Form.querySelector("input:first-child");
   const columnNum = practice1Form.querySelector("input:nth-child(2)");
-  const rowNum = Math.floor(Number(visitorNum.value) / Number(columnNum.value)) + 1;
+
+  let rowNum;
+  
+  if((Number(visitorNum.value) % Number(columnNum.value)) === 0) {
+    rowNum = Number(visitorNum.value) / Number(columnNum.value);
+  } else {
+    rowNum = Math.floor(Number(visitorNum.value) / Number(columnNum.value)) + 1;
+  };
+
   const answer = practice1.querySelector(".answer");
 
   answer.innerText = `관람객 ${visitorNum.value}명을 한 줄당 ${columnNum.value}명씩 앉히긴 위해선, 총 ${rowNum}줄이 필요합니다.`;

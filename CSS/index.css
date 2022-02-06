@@ -55,3 +55,14 @@ input[type="submit"] {
   color: black;
   font-weight: 700;
 }
+#formula-block {
+display: inline-block;
+margin: 0.5rem 1rem;
+padding: 0.5rem;
+border: 1px solid lightslategray;
+border-radius: 0.5rem;
+}
+#formula-block div:first-child {
+  padding: 0.3rem;
+  text-decoration: underline;
+}
