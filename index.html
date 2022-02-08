@@ -4,109 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DoitJS_14Basic JS 🔥</title>
+  <title>Do it JS, 15장🔥</title>
   <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
-  <div id="number-asker" class="section">
-    <div class="function">{변수 선언하기}</div>
-    <div class="title">[ 3의 배수 비교기 ]</div>
-    <div class="question">숫자를 입력하세요</div>
+  <section>
+    <div id="title">멀티 계산기</div>
     <form>
-      <input type="text" required placeholder="숫자만 입력하세요 ex) 3">
-      <input type="submit" value="ok!">
+      <input type="text" placeholder="첫번째 숫자" required>
+      <input type="text" placeholder="두번째 숫자" required>
+      <input type="submit" value="GO!">
+      <div id="result">두 수의 크기를 계산해요!</div>
     </form>
-    <div class="hidden answer"></div>
-  </div>
-
-  <div id="OR" class="section">
-    <div class="function">{OR/AND 연산기}</div>
-    <div class="title">[ 두 숫자는 50미만일까? ]</div>
-    <div class="question">50 미만의 숫자를 입력하세요</div>
-    <form>
-      <input type="text" required placeholder="첫번째 숫자를 입력하세요">
-      <input type="text" required placeholder="두번째 숫자를 입력하세요">
-      <input type="submit" value="ok!">
-    </form>
-    <div class="hidden answer"></div>
-  </div>
-
-  <div id="switch" class="section">
-    <div class="function">{switch문 활용}</div>
-    <div class="title">[ 스타팅 포켓몬 고르기 ]</div>
-    <div class="question">당신의 <b>스타팅 포켓몬</b> 을 고르세요.<br>( '꼬부기, 파이리, 이상해씨' 중 하나 )</div>
-    <form>
-      <input type="text" required placeholder="포켓몬 이름만 입력하세요">
-      <input type="submit" value="ok!">
-    </form>
-    <div class="answer"></div>
-  </div>
-
-  <div id="practice1" class="section">
-    <div class="function">{PRACTICE 1}</div>
-    <div class="title">[ 자리배치도 만들기 ]</div>
-    <div class="question">아래의 질문에 대답 해 주세요.</div>
-    <form>
-      <input type="text" required placeholder="총 관람객수">
-      <input type="text" required placeholder="한줄에 앉을 수 있는 사람 수">
-      <input type="submit" value="ok!">
-    </form>
-    <div class="answer"></div>
-  </div>
-
-  <div id="for문" class="section">
-    <div class="function">{for문 활용}</div>
-    <div class="title">[ 숫자더하기 ]</div>
-    <div class="question">1부터 더할 숫자를 적어주세요.</div>
-    <form>
-      <input type="text" required placeholder="숫자만 적어주세요">
-      <input type="submit" value="ok!">
-    </form>
-    <div class="answer"></div>
-  </div>
-
-  <div id="중첩for문" class="section">
-    <div class="function">{중첩for문 활용}</div>
-    <div class="title">[ 구구단 ]</div>
-    <div class="question">진행할 구구단 단 수를 적어주세요.</div>
-    <form>
-      <input type="text" required placeholder="숫자만 적어주세요">
-      <input type="submit" value="구구단!">
-    </form>
-    <div class="answer"></div>
-  </div>
-
-  <div id="while문" class="section">
-    <div class="function">{while문 활용}</div>
-    <div class="title">[ 꽝! 계산기 ]</div>
-    <div>feat.수학귀신</div>
-    <div class="question">진행할 꽝! 수를 적어주세요.</div>
-    <form>
-      <input type="text" required placeholder="숫자만 적어주세요">
-      <input type="submit" value="꽝!">
-    </form>
-    <div class="answer"></div>
-  </div>
-
-  <div id="continue기능" class="section">
-    <div class="function">{continue기능 활용}</div>
-    <div class="title">[ 짝수끼리 더하기 ]</div>
-    <div class="question">짝수끼리 더하기를 진행할 수를 적어주세요.</div>
-    <form>
-      <input type="text" required placeholder="숫자만 적어주세요">
-      <input type="submit" value="ok!">
-    </form>
-    <div class="answer"></div>
-  </div>
-
-  <script src="JS/1.js"></script>
-  <script src="JS/2_OR.js"></script>
-  <script src="JS/3_switch.js"></script>
-  <script src="JS/4_practice1.js"></script>
-  <script src="JS/5_for문.js"></script>
-  <script src="JS/6_중첩for문.js"></script>
-  <script src="JS/7_while문.js"></script>
-  <script src="JS/8_continue기능.js"></script>
+  </section>
+  <script src="JS/index.js"></script>
 </body>
 </html>
-

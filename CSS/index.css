@@ -2,80 +2,45 @@
   box-sizing: border-box;
 }
 body {
-  margin: 50px;
-  padding: 2rem;
-  background-color: rgba(128, 128, 128, 0.301);
-  border: 10px double  rgba(255, 255, 255, 0.603);
-  border-radius: 2rem;
-  color: white;
+  padding: 10rem;
 }
-input[type="text"] {
-  display: block;
-  width: 10rem;
-  height: 1.6rem;
-  margin: 0.2rem auto;
-  padding: 0 0.5rem;
-  border: none;
-  border-radius: 0.8rem;
-  color: black;
-  text-align: center;
-}
-input[type="submit"] {
-  height: 1.4rem;
-  margin: 0.2rem;
-  border-radius: 0.7rem;
-}
-.function {
-  margin-bottom: 0.5rem;
-  font-size: 0.8rem;
-  opacity: 70%;
-}
-.section {
-  width: 500px;
-  margin: 1rem auto;
-  padding: 2rem 2rem 1rem 2rem;
-  border: 1px solid white;
+section {
+  width: 50%;
+  height: 20rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  border: 1px solid gray;
   border-radius: 1rem;
-  text-align: center;
 }
-.hidden {
-  display: none;
-}
-.title {
-  color: black;
+section #title {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 900;
+  text-align: center;
 }
-.question {
-  margin: 1rem 0 0 0;
-  color: gray;
+section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 12rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid lightgray;
 }
-.answer {
-  margin: 1rem auto;
-  color: black;
-  font-weight: 700;
-}
-#practice1 .answer {
-  padding: 0.5rem;
-  border: 1px solid white;
+section form input {
+  margin: 0.2rem 0;
+  height: 2rem;
+  border: 1px solid gray;
   border-radius: 1rem;
+  line-height: 2rem;
+  text-align: center;
 }
-.column-box {
-  padding: 0.3rem;
+section form input:nth-child(3) {
+  height: 1.2rem;
+  line-height: 1rem;
 }
-.column-box span {
-  padding: 0.1rem 0.2rem;
-  border: 1px solid lightslategray;
-  line-height: 1.4rem;
-}
-#formula-block {
-display: inline-block;
-margin: 0.5rem 1rem;
-padding: 0.5rem;
-border: 1px solid lightslategray;
-border-radius: 0.5rem;
-}
-#formula-block div:first-child {
-  padding: 0.3rem;
-  text-decoration: underline;
+section form #result {
+  padding: 1rem;
+  font-weight: 700;
+  text-align: center;
 }
