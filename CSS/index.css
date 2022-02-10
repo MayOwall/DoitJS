@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 10rem;
+  text-align: center;
+}
+button {
+  width: 20rem;
+  padding: 2rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  line-height: 2rem;
+}

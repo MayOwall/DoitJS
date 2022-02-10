@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  padding: 10rem;
+  font-size: 1rem;
+  font-weight: 900;
+}
+span {
+  padding: 1rem;
+}
