@@ -4,11 +4,97 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Do it JS_16(2) 🔥</title>
+  <title>Do it JS 17장, "DOM" 🔥</title>
   <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
-  <button onclick="popUp('popup.html', 'pop-up', 700, 400)">현재 시간 보기</button>
+  <header>
+    <h3>Do it JS 17장</h3>
+    <h1>문서 객체 모델 : DOM</h1>
+  </header>
+  <section>
+    <arcitcle id="article1" class="article">
+      <h4>[ 문서 객체 모델이란 ]</h4>
+      <div class="box">
+        <p class="title">DOM</p>
+        <p>Document Object Model. 자바스크립트를 이용하여 웹 문서에 접근하고 제어할 수 있도록 <strong>객체</strong>를 사용해 웹 문서를 <strong>체계적으로 정리하는 방법</strong>.</p>
+      </div>
+      <div class="box">
+        <p class="title">DOM Tree</p>
+        <p>HTML의 구조를 트리같은 형태로 그려 나타낸 것. DOM 구조 라고도 한다.</p>
+        <img src="IMG/domtree.png">
+        <p>노드 : DOM트리에서 가지가 갈라져 나간 항목</p>
+        <p>노드의 종류 :
+          <ul class="ul">
+            <li>관계별 : 루트, 부모, 자식, 형제 노드</li>
+            <li>특성별 : 요소, 텍스트, 속성, 주석</li>
+          </ul>
+        </p>
+        <p>DOM Tree 기본 원칙 :
+          <ul class="ul">
+            <li>모든 HTML 태그는 <strong>element(요소)</strong>노드이다.</li>
+            <li>HTML 태그에서 사용하는 텍스트 내용은 자식 노드인 <strong>text(텍스트)노드</strong>이다.</li>
+            <li>HTML 태그에 있는 속성은 자식 노드인 <strong>attribute(속성)노드</strong>이다.</li>
+            <li>주석은 <strong>comment(주석)노드</strong>이다.</li>
+          </ul>
+        </p>
+        <p>DOM 구조가 중요한 이유 :<br>
+        DOM 구조를 머릿속으로 그릴 수 있어야 자바스크립트를 통해 원하는 객체에 접근하여 수정할 수 있기 때문!</p>
+      </div>
+    </arcitcle>
+    <article id="article2" class="article">
+      <h4>[ JS에서 HTML DOM 요소 다루기 ]</h4>
+      <div class="box">
+        <p class="title">DOM 요소 가져오기</p>
+        <p class="name">getElementById()</p>
+        <p class="explains">특정 id가 포함된 DOM 요소에 접근 할 수 있게 해주는 메서드</p>
+        <p class="name">getElementsByClassName()</p>
+        <p class="explains">특정 class 선택자 이름이 들어있는 DOM 요소에 접근할 수 있게 해주는 메서드</p>
+        <p class="name">getElementsByTagName()</p>
+        <p class="explains">tag명을 사용하여 DOM요소에 접근할 수 있는 메서드</p><br>
+        <p class="name">querySelector(선택자)</p>
+        <p class="explains">반환값이 하나인 노드에 접근할 수 있는 메서드</p>
+        <p class="name">querySelectorAll(선택자 || 태그)</p>
+        <p class="explains">반환값이 여러개인 노드에 접근할 수 있는 메서드</p>
+      </div>
+      <div class="box">
+        <p class="title">HTML DOM 요소의 내용 수정하기</p>
+        <p class="name">innerText</p>
+        <p class="explains">DOM 요소의 텍스트 내용 표시</p>
+        <p class="name">innerHTML</p>
+        <p class="explains">DOM 요소의 텍스트, <strong><u>태그까지</u></strong> 반영하여 표시!</p>
+      </div>
+      <div class="box">
+        <p class="title">HTML DOM 요소의 속성 수정하기</p>
+        <p class="name">getAttribute("속성명")</p>
+        <p class="explains">DOM요소의 속성에 접근하는 메서드.</p>
+        <p class="name">setAttribute("속성명", "값")</p>
+        <p class="explains">DOM요소의 속성 추가 및 변경할 수 있는 메서드.</p>
+      </div>
+    </article>
+    <article id="article3" class="article">
+      <h4>DOM요소를 통한 이벤트 처리하기</h4>
+      <div class="box">
+        <p class="title">DOM 요소에 함수 직접 연결하기</p>
+        <p class="explains">onclick 등의 이벤트에 직접 함수 연결, HTML 내부에 작성.</p>
+        <p class="title">함수 이름을 사용해 연결하기</p>
+        <p class="explains">js에 따로 정의해 둔 함수 이벤트를 함수 이름을 통해html내부에서 직접 연결.<br>
+        이 경우 <strong><u>함수 이름 다음의 괄호는 따로 쓰지 않음.</u></strong></p>
+        <p class="title">addEventListener()이용하기</p>
+        <p class="explains">addEventListener(이벤트, 함수, 캡처 여부);</p>
+      </div>
+    </article>
+    <article id="article4" class="article">
+      <h4>DOM을 공부합시당</h4>
+      <div class="box">
+        <button onclick="addDomTree()">돔 구조</button>
+      </div>
+    </article>
+  </section>
+  <footer>
+    <span>Do it 17장_DOM</span>
+    <span>made by, Owall</span>
+  </footer>
   <script src="JS/index.js"></script>
 </body>
 </html>
